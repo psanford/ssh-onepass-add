@@ -86,8 +86,7 @@ func main() {
 	}
 	for _, key := range keys {
 		if bytes.Equal(key.Blob, fullPublicKey.Marshal()) {
-			fmt.Println("Key already loaded")
-			os.Exit(0)
+			fmt.Println("Key already loaded, loading anyways")
 		}
 	}
 
